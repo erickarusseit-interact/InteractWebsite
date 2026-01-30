@@ -1,97 +1,90 @@
 import React from 'react';
-import MagicBento from '../(componenten)/BentoBits';
-
 export default function LeistungenBento() {
     return (
-        <section className='bg-neutral-50 text-neutral-900 px-20 py-16 pt-32'>
-            {/* Header */}
-            <h2 className='text-neutral-900 pb-2'>Leistungen</h2>
-            <p className='text-neutral-600 max-w-4xl pb-12'>
+        <section className='bg-neutral-50 text-neutral-900 '>
+         <div className='mx-auto max-w-[1440px] px-6 sm:px-12 lg:px-20 pb-12 pt-32 sm:pb-14 sm:pt-32 lg:pb-16 lg:pt-32 flex flex-col '>
+            <h2 className='text-neutral-900 pb-2 text-2xl sm:text-3xl md:text-4xl'>Leistungen</h2>
+            <p className='text-neutral-600 pb-8 sm:pb-10 md:pb-12 text-sm sm:text-base max-w-3xl'>
                 Das Ziel jeder Website ist es, Ihre Kunden zu überzeugen und zu motivieren. Um dies zu gewährleisten, 
                 ist es essenziell, zu verstehen und zu messen, was Ihren Kunden wichtig ist. Unsere System stellt sicher 
                 das die Ansprüche Ihrer Website klar ermittelt und umgesetzt werden.
             </p>
 
-            {/* Grid Layout - 2 columns */}
-            <div className='grid grid-cols-10 gap-6 h-[960px]'>
+            {/* Grid Layout Bento Layout - Responsive */}
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-10 gap-4 sm:gap-6 auto-rows-fr lg:h-[960px]'>
                 
                 {/* Card 1 - Positionierung und Marktforschung */}
-                <div className='bg-neutral-950 text-neutral-100 rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden  h-full col-span-6'>
-                    <p>
+                <div className='bg-neutral-950 text-neutral-100 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 flex flex-col justify-between relative overflow-hidden h-[320px] sm:h-[360px] md:h-[400px] lg:h-full col-span-1 md:col-span-2 lg:col-span-6'>
+                    <p className='text-neutral-400 text-sm sm:text-base mb-4 z-20'>
                         <span className='text-neutral-50 font-medium'>Positionierung und Marktforschung, </span>
-                        <span className='text-neutral-400'>Wir schaffen Klarheit darüber, was Ihr wirklich verkauft, wen und warum es überzeugt.</span>
+                        Wir schaffen Klarheit darüber, was Ihr wirklich verkauft, wen und warum es überzeugt
                     </p>
                     {/* Image placeholder - absolute so it doesn't affect layout */}
-                    <div className='absolute inset-0 flex items-center justify-center pointer-events-none'>
-                        {/* <img src="/your-image.svg" alt="" className="w-full h-full object-contain" /> */}
+                    <div className='absolute inset-0 flex items-center justify-center pointer-events-none bg-[url(/images/texture.lines.6px.svg)50]  overflow-hidden'>
+                         <img src="/images/Marktforschung.IL.png" alt="Makrktforschung.IL" className="object-contain scale-150 " /> 
                     </div>
-                    <div className='flex flex-wrap gap-x-6 gap-y-2 text-sm text-neutral-400 relative z-10'>
-                        <span>• Marktforschung & Nutzeranalyse</span>
-                        <span>• Psychologische Motiv- & Entscheidungsanalyse</span>
-                        <span>• Positionierung & Messaging</span>
+                    <div className='flex flex-col sm:flex-row sm:flex-wrap gap-x-4 sm:gap-x-6 gap-y-1 sm:gap-y-2 text-xs sm:text-sm text-neutral-400 relative z-10'>
+                        <p>• Marktforschung & Nutzeranalyse</p>
+                        <p>• Psychologische Motiv- & Entscheidungsanalyse</p>
+                        <p>• Positionierung & Messaging</p>
                     </div>
                 </div>
 
                 {/* Card 2 - UX & Produktdesign */}
-                <div className='bg-neutral-950 text-neutral-100 rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden h-full col-span-4'>
-                    <p>
+                <div className='bg-neutral-950 text-neutral-100 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 flex flex-col justify-between relative overflow-hidden h-[320px] sm:h-[360px] md:h-[400px] lg:h-full col-span-1 md:col-span-1 lg:col-span-4'>
+                    <p className='text-neutral-400 text-sm sm:text-base mb-4 z-20'>
                         <span className='text-neutral-50 font-medium'>UX & Produktdesign, </span>
-                        <span className='text-neutral-400'>Wir übersetzen Erkenntnis in markante Strukturen, klare Abläufe und intuitive Interfaces.</span>
+                        Wir übersetzen Erkenntnis in markante Strukturen, klare Abläufe und intuitive Interfaces.
                     </p>
                     {/* Image placeholder - absolute so it doesn't affect layout */}
-                    <div className='absolute inset-0 flex items-center justify-center pointer-events-none'>
-                        {/* <img src="/your-image.svg" alt="" className="w-full h-full object-contain" /> */}
+                    <div className='absolute inset-0 pointer-events-none'>
+                         <img src="/images/UX.IL.png" alt="UX.IL" className="object-contain h-full scale-175  " /> 
                     </div>
-                    <div className='flex flex-wrap gap-x-6 gap-y-2 text-sm text-neutral-400 relative z-10'>
-                        <span>• UX-Konzepte</span>
-                        <span>• Prototypen & Tests</span>
-                        <span>• Conversion- und Onboarding</span>
+                    <div className='flex flex-col sm:flex-row sm:flex-wrap gap-x-4 sm:gap-x-6 gap-y-1 sm:gap-y-2 text-xs sm:text-sm text-neutral-400 relative z-10'>
+                        <p>• UX-Konzepte</p>
+                        <p>• Prototypen & Tests</p>
+                        <p>• Conversion- und Onboarding</p>
                     </div>
                 </div>
 
                 {/* Card 3 - Automatisierung & Skalierung */}
-                <div className='bg-neutral-950 text-neutral-100 rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden col-span-4'>
-                    <p>
+                <div className='bg-neutral-950 text-neutral-100 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 flex flex-col justify-between relative overflow-hidden h-[320px] sm:h-[360px] md:h-[400px] lg:h-full col-span-1 md:col-span-1 lg:col-span-4'>
+                    <p className='text-neutral-400 text-sm sm:text-base mb-4 z-20'>
                         <span className='text-neutral-50 font-medium'>Automatisierung & Skalierung, </span>
-                        <span className='text-neutral-400'>Wir automatisieren Prozesse und schaffen Strukturen, die Wachstum ermöglichen, statt es zu bremsen.</span>
+                        Wir automatisieren Prozesse und schaffen Strukturen, die Wachstum ermöglichen, statt es zu bremsen.
                     </p>
                     {/* Image placeholder - absolute so it doesn't affect layout */}
                     <div className='absolute inset-0 flex items-center justify-center pointer-events-none'>
-                        {/* <img src="/your-image.svg" alt="" className="w-full h-full object-contain" /> */}
+                        <img src="/images/Automation.IL.png" alt="Automatisierung.IL" className="object-contain h-full scale-150 " />
                     </div>
-                    <div className='flex flex-wrap gap-x-6 gap-y-2 text-sm text-neutral-400 relative z-10'>
-                        <span>• User Flows & Informationsarchitektur</span>
-                        <span>• Monitoring & Optimierung</span>
+                    <div className='flex flex-col sm:flex-row sm:flex-wrap gap-x-4 sm:gap-x-6 gap-y-1 sm:gap-y-2 text-xs sm:text-sm text-neutral-400 relative z-10'>
+                        <p>• User Flows & Informationsarchitektur</p>
+                        <p>• Monitoring & Optimierung</p>
                     </div>
                 </div>
 
                 {/* Card 4 - Entwicklung */}
-                <div className='bg-neutral-950 text-neutral-100 rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden col-span-6'>
-                    <p>
+                <div className='bg-neutral-950 text-neutral-100 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 flex flex-col justify-between relative overflow-hidden h-[320px] sm:h-[360px] md:h-[400px] lg:h-full col-span-1 md:col-span-2 lg:col-span-6'>
+                    <p className='text-neutral-400 text-sm sm:text-base mb-4 z-20'>
                         <span className='text-neutral-50 font-medium'>Entwicklung, </span>
-                        <span className='text-neutral-400'>Wir entwickeln saubere, Skalierbare Systeme, die sich flexibel anpassen lassen. So bleibt euer Produkt stabil, während es wächst.</span>
+                        Wir entwickeln saubere, Skalierbare Systeme, die sich flexibel anpassen lassen. So bleibt euer Produkt stabil, während es wächst.
                     </p>
                     {/* Image placeholder - absolute so it doesn't affect layout */}
                     <div className='absolute inset-0 flex items-center justify-center pointer-events-none'>
-                        {/* <img src="/your-image.svg" alt="" className="w-full h-full object-contain" /> */}
+                        <img src="/images/Webdev.IL.png" alt="Webdev.IL" className="w-full h-full object-contain scale-150" />
                     </div>
-                    <div className='flex flex-wrap gap-x-6 gap-y-2 text-sm text-neutral-400 relative z-10'>
-                        <span>• Web- & Web-App-Entwicklung</span>
-                        <span>• Frontend & Backend</span>
-                        <span>• API- & System-Integrationen</span>
-                        <span>• Architektur & Infrastruktur</span>
+                    <div className='flex flex-col sm:flex-row sm:flex-wrap gap-x-4 sm:gap-x-6 gap-y-1 sm:gap-y-2 text-xs sm:text-sm text-neutral-400 relative z-10'>
+                        <p>• Web- & Web-App-Entwicklung</p>
+                        <p>• Frontend & Backend</p>
+                        <p>• API- & System-Integrationen</p>
+                        <p>• Architektur & Infrastruktur</p>
                     </div>
                 </div>
 
             </div>
 
-            
-
-    <MagicBento
-        
-        enableStars={false}
-         enableTilt
-         enableMagnetism />
+      
+     </div>
      </section>
     );
 }

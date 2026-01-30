@@ -62,8 +62,8 @@
 
    return (
      <section className='bg-neutral-50 text-neutral-900'>
-       <div className='mx-auto max-w-[1440px] px-[80px] py-[64px] flex flex-col gap-6'>
-         <h2 className='text-[42px] leading-[115%] tracking-[-0.03em] font-semibold text-black'>
+       <div className='mx-auto max-w-[1440px] px-6 sm:px-12 lg:px-20 py-12 sm:py-14 lg:py-16 flex flex-col gap-6'>
+         <h2 className=' text-black'>
            Häufig gestellte Fragen
          </h2>
 

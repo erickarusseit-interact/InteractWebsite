@@ -1,0 +1,24 @@
+<svg width="472" height="348" viewBox="0 0 472 348" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g style="mix-blend-mode:overlay" clip-path="url(#clip0_61_53)">
+<g clip-path="url(#clip1_61_53)">
+<rect width="472" height="348" rx="12" fill="#1A1A1A"/>
+<rect x="0.5" y="0.5" width="471" height="29" stroke="#D9D9D9" stroke-opacity="0.3"/>
+<circle cx="17" cy="15" r="4.5" fill="#FF5F57" stroke="#E1413A"/>
+<circle cx="31" cy="15" r="4.5" fill="#FEBC2E" stroke="#DF9C0C"/>
+<circle cx="45" cy="15" r="4.5" fill="#28C840" stroke="#0CA923"/>
+<path d="M34 298.5H226C227.933 298.5 229.5 300.067 229.5 302V347.5H30.5V302C30.5 300.067 32.067 298.5 34 298.5Z" fill="white" fill-opacity="0.1"/>
+<path d="M34 298.5H226C227.933 298.5 229.5 300.067 229.5 302V347.5H30.5V302C30.5 300.067 32.067 298.5 34 298.5Z" stroke="white"/>
+<path d="M246 298.5H438C439.933 298.5 441.5 300.067 441.5 302V347.5H242.5V302C242.5 300.067 244.067 298.5 246 298.5Z" fill="white" fill-opacity="0.1"/>
+<path d="M246 298.5H438C439.933 298.5 441.5 300.067 441.5 302V347.5H242.5V302C242.5 300.067 244.067 298.5 246 298.5Z" stroke="white"/>
+</g>
+<rect x="0.5" y="0.5" width="471" height="347" rx="11.5" stroke="white" stroke-opacity="0.9"/>
+</g>
+<defs>
+<clipPath id="clip0_61_53">
+<rect width="472" height="348" fill="white"/>
+</clipPath>
+<clipPath id="clip1_61_53">
+<rect width="472" height="348" rx="12" fill="white"/>
+</clipPath>
+</defs>
+</svg>

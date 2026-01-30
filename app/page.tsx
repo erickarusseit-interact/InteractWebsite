@@ -1,26 +1,29 @@
 import React from 'react';
-import tailwindcss from 'tailwindcss';
+
 import Link from 'next/link';
 import Button from './(componenten)/button';
 import LeistungenBento from './(Sections)/Leistungen';
 import Zeitplan from './(Sections)/Zeitplan';
 import Techstack from './(Sections)/Techstack';
 import Faq from './(Sections)/Faq';
-
+import Footer from './(Sections)/Footer'; 
+import Preise from './(Sections)/Preise';
 import Herosection from './(Sections)/Hero';
 import HeroUsp from './(Sections)/Hero-usp';
 
 
 export default function Home() {
   
-  return <div className="bg-neutral">
+  return <div className="bg-black">
     
-    <Herosection />
-    <HeroUsp />
-    <LeistungenBento />
-    <Zeitplan />
-    <Techstack/>
-    <Faq />
+    <div id="hero"><Herosection /></div>
+    <div id="leistungen"><HeroUsp /></div>
+    <div id="services"><LeistungenBento /></div>
+    <div id="ablauf"><Zeitplan /></div>
+    <div id="techstack"><Techstack/></div>
+    
+    <div id="faq"><Faq /></div>
+    <Footer />
   </div>
 }
 

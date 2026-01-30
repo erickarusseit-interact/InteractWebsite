@@ -1,11 +1,13 @@
+
 @import "tailwindcss";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 /* Wie implemeintiere ich Tailwind in meine css Klassen?*/ 
 
-
-
+html {
+  scroll-behavior: smooth;
+}
 
 body{
     /* color:black; */
@@ -18,14 +20,16 @@ font-style: normal;
 font-weight: 600;
 font-size: 82px;
 line-height: 115%;
-
-/* or 94px */
 letter-spacing: -0.03em;
-
-/* Inside auto layout */
 flex: none;
 order: 0;
 flex-grow: 0;
+
+/* Gradient text - dark background (white gradient) */
+background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 h2 {
@@ -35,6 +39,25 @@ font-weight: 600;
 font-size: 52px;
 line-height: 115%;
 letter-spacing: -0.03em;
+
+/* Gradient text - dark background (white gradient) */
+background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+/* Light background variant - black/gray gradient */
+.bg-neutral-50 h1,
+.bg-neutral-100 h1,
+.bg-white h1,
+.bg-neutral-50 h2,
+.bg-neutral-100 h2,
+.bg-white h2 {
+background: linear-gradient(180deg, #0a0a0a 0%, #525252 100%);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 h3 {
@@ -69,19 +92,26 @@ span {
 font-family: 'Outfit';
 font-style: medium;
 font-weight: 600;
-font-size: 16px;
+font-size: 18px;
 line-height: 125%;
 opacity: 100%;
 }
 
-p {
-/* p */
+p, a {
+/* p and a shared styles */
 font-family: 'Outfit';
 font-style: normal;
 font-weight: 400;
-font-size: 14px;
+font-size: 16px;
 line-height: 125%;
 opacity: 80%;
 /* or 18px */
 letter-spacing: -0.02em;
+}
+
+:root {
+  --text-base: 'Outfit', sans-serif;
+  --text-size: 16px;
+  --text-weight: 400;
+  --text-opacity: 80%;
 }

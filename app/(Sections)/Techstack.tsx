@@ -33,8 +33,9 @@ export default function Techstack() {
         'Schützt vor Fehlern, bevor sie entstehen.\nSorgt dafür, dass Anwendungen stabil, wartbar und langfristig sicher bleiben.',
       icons: (
         <div className='flex items-center gap-2'>
-          <IconBadge className='bg-[#007ACC] text-white text-xs font-semibold'>TS</IconBadge>
           <IconBadge className='bg-[#F7DF1E] text-black text-xs font-semibold'>JS</IconBadge>
+          <IconBadge className='bg-[#007ACC] text-white text-xs font-semibold'>TS</IconBadge>
+          
         </div>
       ),
     },
@@ -45,8 +46,9 @@ export default function Techstack() {
         'Sorgt dafür, dass eure Website schnell lädt, stabil läuft und von Google gut gefunden wird.\nBesucher bekommen Inhalte sofort, statt zu warten und können sofort interagieren.',
       icons: (
         <div className='flex items-center gap-2'>
-          <IconBadge className='bg-black text-white text-sm font-semibold'>N</IconBadge>
+        
           <IconBadge className='bg-black text-[#61DAFB] text-base font-semibold'>✳</IconBadge>
+          <IconBadge className='bg-black text-white text-sm font-semibold '>N</IconBadge>
         </div>
       ),
     },
@@ -65,13 +67,13 @@ export default function Techstack() {
     },
     {
       key: 'aws-vercel',
-      label: 'AWS & Vercel',
+      label: 'Vercel',
       description:
         'Stellt eure Anwendung online und sorgt dafür, dass sie überall maximal performant läuft.',
       icons: (
         <div className='flex items-center gap-2'>
-          <IconBadge className='bg-white border border-neutral-200 text-neutral-900 text-[10px] font-semibold'>aws</IconBadge>
           <IconBadge className='bg-black text-white text-sm font-semibold'>▲</IconBadge>
+          <IconBadge className='bg-black text-white text-sm font-semibold invisible'>▲</IconBadge>
         </div>
       ),
     },
@@ -118,23 +120,23 @@ export default function Techstack() {
 
   return (
     <section className='bg-neutral-50 text-neutral-900'>
-      <div className='mx-auto max-w-[1440px] px-20 py-16 flex flex-col gap-8'>
+      <div className='mx-auto max-w-[1440px] px-6 sm:px-12 lg:px-20 py-16 flex flex-col gap-8'>
         <h2 className='text-neutral-900'>Techstack</h2>
 
         <div className='w-full max-w-[1280px]'>
           {rows.map((row, idx) => (
             <div
                 key={row.key}
-              className={`flex items-start justify-between gap-10 py-6 ${
-                idx === rows.length - 1 ? '' : 'border-b border-neutral-100'
+              className={`flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 sm:gap-10 py-6 ${
+                idx === rows.length - 1 ? '' : 'border-b border-neutral-200/70'
               }`}
             >
-              <div className='flex items-center gap-4 min-w-0 w-[440px]'>
+              <div className='flex items-center gap-4 min-w-0 sm:w-[280px] lg:w-[440px]'>
                 {row.icons}
                 <div className='font-medium text-neutral-900'><h5>{row.label} </h5></div>
               </div>
 
-              <div className='min-w-0 flex-1 max-w-[720px] whitespace-pre-line'>
+              <div className='min-w-0 flex-1 sm:max-w-[720px] whitespace-pre-line'>
                <p>{row.description} </p>
               </div>
             </div>
