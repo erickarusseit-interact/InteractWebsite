@@ -17,7 +17,6 @@ export default function Hero() {
 }
 
 useEffect(() => {
-  let timeoutId: NodeJS.Timeout;
 
   const updateDimensions = () => {
     if (sourceRef.current && targetRef.current) {
@@ -32,7 +31,6 @@ useEffect(() => {
   window.addEventListener('scroll', updateDimensions); // Add this
 
   return () => {
-    clearTimeout(timeoutId);
     window.removeEventListener('resize', updateDimensions);
     window.removeEventListener('scroll', updateDimensions); // Add this
   };
