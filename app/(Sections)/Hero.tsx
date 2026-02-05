@@ -66,7 +66,7 @@ const handleAnimationComplete = () => {
         <div 
           className='absolute inset-0 opacity-70 bg-purple-300/50 mx-0 my-0 '
           style={{
-            filter: 'blur(clamp(5px, 5vw, 20px))'
+            filter: 'blur(clamp(15px, 5vw, 30px))'
           }}
         />
         {/* Purple glow - centered on window */}
@@ -82,7 +82,7 @@ const handleAnimationComplete = () => {
         <div 
           className='absolute inset-0 bg-purple-300 mx-0 my-0'
           style={{
-            filter: 'blur(clamp(6px, 1.2vw, 12px))'
+            filter: 'blur(clamp(15px, 1.2vw, 22px))'
           }}
         />
       
@@ -128,7 +128,7 @@ const handleAnimationComplete = () => {
                   <div 
                     className='absolute inset-0 opacity-70 bg-purple-300/90'
                     style={{
-                      filter: 'blur(clamp(10px, 5vw, 20px))'
+                      filter: 'blur(clamp(20px, 5vw, 30px))'
                     }}
                   />
                   {/* Purple glow */}
