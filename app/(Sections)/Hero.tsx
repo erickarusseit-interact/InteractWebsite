@@ -80,9 +80,9 @@ const handleAnimationComplete = () => {
           
         {/* Light purple glow 2 - innermost glow */}
         <div 
-          className='absolute inset-0 bg-purple-300 mx-0 my-0'
+          className='absolute inset-0 bg-purple-300 -m-4'
           style={{
-            filter: 'blur(clamp(15px, 1.2vw, 22px))'
+            filter: 'blur(clamp(20px, 6vw, 35px))'
           }}
         />
       
@@ -123,7 +123,7 @@ const handleAnimationComplete = () => {
               <div ref={sourceRef} className='relative w-full h-auto'>
             
                 {/* Glow Effects - Matching ElectricBorder Container */}
-                <div className='absolute inset-0 z-0 opacity-80 sm:opacity-100 '>
+                <div className='absolute inset-0 z-0 opacity-90 sm:opacity-100 overflow-visible'>
                   {/* Main blur background */}
                   <div 
                     className='absolute inset-0 opacity-70 bg-purple-300/90'
@@ -142,7 +142,7 @@ const handleAnimationComplete = () => {
                   <div 
                     className='absolute inset-0 bg-purple-200 m-4'
                     style={{
-                      filter: 'blur(clamp(12px, 10vw, 10px))'
+                      filter: 'blur(clamp(20px, 10vw, 40px))'
                     }}
                   />
                 

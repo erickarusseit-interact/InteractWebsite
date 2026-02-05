@@ -14,7 +14,7 @@ export default function LeistungenBento() {
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-10 gap-4 sm:gap-6 auto-rows-fr lg:h-[960px]'>
                 
                 {/* Card 1 - Positionierung und Marktforschung */}
-                <div className='bg-neutral-950 text-neutral-100 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 flex flex-col justify-between relative overflow-hidden h-[480px] sm:h-[360px] md:h-[400px] lg:h-full col-span-1 md:col-span-2 lg:col-span-6'>
+                <div className='bg-black text-neutral-100 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 flex flex-col justify-between relative overflow-hidden h-[480px] sm:h-[360px] md:h-[400px] lg:h-full col-span-1 md:col-span-2 lg:col-span-6'>
                     <p className='text-neutral-400 text-sm sm:text-base mb-4 z-20'>
                         <span className='text-neutral-50 font-medium'>Positionierung und Marktforschung, </span>
                         Wir schaffen Klarheit darüber, was Ihr wirklich verkauft, wen und warum es überzeugt
@@ -64,7 +64,7 @@ export default function LeistungenBento() {
                 </div>
 
                 {/* Card 4 - Entwicklung */}
-                <div className='bg-neutral-950 text-neutral-100 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 flex flex-col justify-between relative overflow-hidden h-[480px] sm:h-[360px] md:h-[400px] lg:h-full col-span-1 md:col-span-2 lg:col-span-6'>
+                <div className='bg-black text-neutral-100 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 flex flex-col justify-between relative overflow-hidden h-[480px] sm:h-[360px] md:h-[400px] lg:h-full col-span-1 md:col-span-2 lg:col-span-6'>
                     <p className='text-neutral-400 text-sm sm:text-base mb-4 z-20'>
                         <span className='text-neutral-50 font-medium'>Entwicklung, </span>
                         Wir entwickeln saubere, skalierbare Systeme, die sich flexibel anpassen lassen. So bleibt euer Produkt stabil, während es wächst.
