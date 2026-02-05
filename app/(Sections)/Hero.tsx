@@ -123,7 +123,7 @@ const handleAnimationComplete = () => {
               <div ref={sourceRef} className='relative w-full h-auto'>
             
                 {/* Glow Effects - Matching ElectricBorder Container */}
-                <div className='absolute inset-0 z-0 opacity-80 sm:opacity-100 '>
+                <div className='absolute inset-0 z-0 opacity-100'>
                   {/* Main blur background */}
                   <div 
                     className='absolute inset-0 opacity-70 bg-purple-300/90'
