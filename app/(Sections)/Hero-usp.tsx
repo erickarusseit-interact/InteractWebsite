@@ -33,7 +33,7 @@ export default function HeroUsp() {
                 
                 <p className='text-sm sm:text-base text-neutral-200 min-w-0 text-left'>
                   <span className='text-neutral-50'>Klare Maßnahmen auf Fakten und Wissenschaft nicht Bauchgefühl.</span>{' '}
-                 Unser Design folgt Daten, nicht Trends oder dem hübschen aussehen, mit dem Ziel Ergebnisse zu liefern.
+                 Unser Design folgt Daten, nicht Trends oder dem hübschen Aussehen, mit dem Ziel Ergebnisse zu liefern.
                 </p>
             </div>
 

@@ -261,7 +261,7 @@ export default function Kontaktformular() {
             Projekt starten
           </h2>
           <p className="text-neutral-400 mt-3 text-lg">
-            Erzählen Sie uns von Ihrem Vorhaben
+            Erzählen Sie uns von Ihrem Vorhaben.
           </p>
         </div>
 

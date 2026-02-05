@@ -6,8 +6,8 @@ export default function LeistungenBento() {
             <h2 className='text-neutral-900 pb-2 text-2xl sm:text-3xl md:text-4xl'>Leistungen</h2>
             <p className='text-neutral-600 pb-8 sm:pb-10 md:pb-12 text-sm sm:text-base max-w-3xl'>
                 Das Ziel jeder Website ist es, Ihre Kunden zu überzeugen und zu motivieren. Um dies zu gewährleisten, 
-                ist es essenziell, zu verstehen und zu messen, was Ihren Kunden wichtig ist. Unsere System stellt sicher 
-                das die Ansprüche Ihrer Website klar ermittelt und umgesetzt werden.
+                ist es essenziell, zu verstehen und zu messen, was Ihren Kunden wichtig ist. Unser System stellt sicher, 
+                dass die Ansprüche Ihrer Website klar ermittelt und umgesetzt werden.
             </p>
 
             {/* Grid Layout Bento Layout - Responsive */}
@@ -21,7 +21,7 @@ export default function LeistungenBento() {
                     </p>
                     {/* Image placeholder - absolute so it doesn't affect layout */}
                     <div className='absolute inset-0 flex items-center justify-center pointer-events-none bg-[url(/images/texture.lines.6px.svg)50]  overflow-hidden'>
-                         <img src="/images/Marktforschung.IL.png" alt="Makrktforschung.IL" className="object-contain scale-150 " /> 
+                         <img src="/images/Marktforschung.IL.png" alt="Marktforschung.IL" className="object-contain scale-150 " /> 
                     </div>
                     <div className='flex flex-col sm:flex-row sm:flex-wrap gap-x-4 sm:gap-x-6 gap-y-1 sm:gap-y-2 text-xs sm:text-sm text-neutral-400 relative z-10'>
                         <p>• Marktforschung & Nutzeranalyse</p>
@@ -38,7 +38,7 @@ export default function LeistungenBento() {
                     </p>
                     {/* Image placeholder - absolute so it doesn't affect layout */}
                     <div className='absolute inset-0 pointer-events-none'>
-                         <img src="/images/UX.IL.png" alt="UX.IL" className="object-contain h-full scale-175  " /> 
+                                                 <img src="/images/UX.IL.png" alt="UX.IL" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-contain h-full scale-175" />
                     </div>
                     <div className='flex flex-col sm:flex-row sm:flex-wrap gap-x-4 sm:gap-x-6 gap-y-1 sm:gap-y-2 text-xs sm:text-sm text-neutral-400 relative z-10'>
                         <p>• UX-Konzepte</p>
@@ -55,7 +55,7 @@ export default function LeistungenBento() {
                     </p>
                     {/* Image placeholder - absolute so it doesn't affect layout */}
                     <div className='absolute inset-0 flex items-center justify-center pointer-events-none'>
-                        <img src="/images/Automation.IL.png" alt="Automatisierung.IL" className="object-contain h-full scale-150 " />
+                        <img src="/images/Automation.IL.png" alt="Automatisierung.IL" className=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-contain h-full scale-175 " />
                     </div>
                     <div className='flex flex-col sm:flex-row sm:flex-wrap gap-x-4 sm:gap-x-6 gap-y-1 sm:gap-y-2 text-xs sm:text-sm text-neutral-400 relative z-10'>
                         <p>• User Flows & Informationsarchitektur</p>
@@ -67,7 +67,7 @@ export default function LeistungenBento() {
                 <div className='bg-neutral-950 text-neutral-100 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 flex flex-col justify-between relative overflow-hidden h-[320px] sm:h-[360px] md:h-[400px] lg:h-full col-span-1 md:col-span-2 lg:col-span-6'>
                     <p className='text-neutral-400 text-sm sm:text-base mb-4 z-20'>
                         <span className='text-neutral-50 font-medium'>Entwicklung, </span>
-                        Wir entwickeln saubere, Skalierbare Systeme, die sich flexibel anpassen lassen. So bleibt euer Produkt stabil, während es wächst.
+                        Wir entwickeln saubere, skalierbare Systeme, die sich flexibel anpassen lassen. So bleibt euer Produkt stabil, während es wächst.
                     </p>
                     {/* Image placeholder - absolute so it doesn't affect layout */}
                     <div className='absolute inset-0 flex items-center justify-center pointer-events-none'>

@@ -39,7 +39,7 @@
            'Ja. Wir bauen eure Website so, dass Inhalte und Seiten später leicht anpassbar sind. Auf Wunsch bekommt ihr eine kurze Einweisung und klare Übergabe.',
        },
        {
-         question: 'Wie handhaben wir die Wartung und Updates nach dem Launch ?',
+         question: 'Wie handhaben wir die Wartung und Updates nach dem Launch?',
          answer:
            'Nach dem Launch bieten wir verschiedene Wartungs- und Updateoptionen an, sodass ihr immer auf dem neuesten Stand bleibt.',
        },
@@ -51,7 +51,7 @@
        {
          question: 'Wie lange dauert ein typisches Projekt?',
          answer:
-           'Das hängt vom Umfang ab. Kleine Websites dauern oft wenige Wochen, komplexere Web-Apps eher mehrere Wochen bis Monate. Nach einem kurzen Kickoff können wir es genau einschätzen.',
+           'Das hängt vom Umfang ab. Kleine Websites dauern oft wenige Wochen (ca. 4-8 Wochen), komplexere Web-Apps eher mehrere Wochen bis Monate (ca. 10-16 Wochen). Nach einem kurzen Kickoff können wir es genau einschätzen.',
        },
        
      ],

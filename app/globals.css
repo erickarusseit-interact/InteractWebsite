@@ -26,7 +26,7 @@ order: 0;
 flex-grow: 0;
 
 /* Gradient text - dark background (white gradient) */
-background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%);
+background: linear-gradient(180deg, #FFFFFF 10%, rgba(255, 255, 255, 0.85) 100%);
 -webkit-background-clip: text;
 background-clip: text;
 -webkit-text-fill-color: transparent;
