@@ -71,7 +71,7 @@ export default function LeistungenBento() {
                     </p>
                     {/* Image placeholder - absolute so it doesn't affect layout */}
                     <div className='absolute inset-0 flex items-center justify-center pointer-events-none'>
-                        <img src="/images/Webdev.IL.png" alt="Webdev.IL" className="w-full h-full object-contain scale-150" />
+                        <img src="/images/Webdev.IL.png" alt="Webdev.IL" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-contain h-full scale-150" />
                     </div>
                     <div className='flex flex-col sm:flex-row sm:flex-wrap gap-x-4 sm:gap-x-6 gap-y-1 sm:gap-y-2 text-xs sm:text-sm text-neutral-400 relative z-10'>
                         <p>• Web- & Web-App-Entwicklung</p>
