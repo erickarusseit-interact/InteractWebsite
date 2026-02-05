@@ -101,7 +101,7 @@ const handleAnimationComplete = () => {
     
 
       {/* Hero:Window.IL Main Container - Responsive  */}
-      <div className=' overflow-visible flex flex-col justify-center items-center lg:items-start gap-3 w-full max-w-[320px] sm:max-w-[400px] lg:max-w-[472px] h-auto min-h-[280px] sm:min-h-[320px] lg:min-h-[348px] z-10 '>
+      <div className=' overflow-visible flex flex-col justify-center items-center lg:items-start gap-3 w-full max-w-[320px] sm:max-w-[400px] lg:max-w-[472px] h-auto min-h-[280px] sm:min-h-[320px] lg:min-h-[348px] z-10 mix-blend-overlay'>
         
         {/* Frame 92 - Main Window */}
         <div className='flex flex-row items-start gap-3 w-full h-auto min-h-[280px] sm:min-h-[320px] lg:min-h-[348px] overflow-visible'>
