@@ -80,9 +80,9 @@ const handleAnimationComplete = () => {
           
         {/* Light purple glow 2 - innermost glow */}
         <div 
-          className='absolute inset-0 bg-purple-300 -m-4'
+          className='absolute inset-0 bg-purple-300 mx-0 my-0'
           style={{
-            filter: 'blur(clamp(20px, 6vw, 35px))'
+            filter: 'blur(clamp(6px, 1.2vw, 12px))'
           }}
         />
       
@@ -107,7 +107,7 @@ const handleAnimationComplete = () => {
         <div className='flex flex-row items-start gap-3 w-full h-auto min-h-[280px] sm:min-h-[320px] lg:min-h-[348px]'>
           
           {/* Main Window Container - Responsive */}
-          <div className='flex flex-col items-start gap-2 w-full bg-gray-900 border border-white/40 rounded-xl overflow-hidden'>
+          <div className='flex flex-col items-start gap-2 w-full bg-gray-900 border border-white/40 rounded-xl overflow-visible'>
             
             {/* Window Header with Dots - Responsive */}
             <div className='flex flex-row items-center px-3 py-2 gap-1 w-full h-[30px] border-b border-gray-300/30'>
@@ -123,12 +123,12 @@ const handleAnimationComplete = () => {
               <div ref={sourceRef} className='relative w-full h-auto'>
             
                 {/* Glow Effects - Matching ElectricBorder Container */}
-                <div className='absolute inset-0 z-0 opacity-90 sm:opacity-100 overflow-visible'>
+                <div className='absolute inset-0 z-0 opacity-80 sm:opacity-100 '>
                   {/* Main blur background */}
                   <div 
                     className='absolute inset-0 opacity-70 bg-purple-300/90'
                     style={{
-                      filter: 'blur(clamp(20px, 5vw, 30px))'
+                      filter: 'blur(clamp(10px, 5vw, 20px))'
                     }}
                   />
                   {/* Purple glow */}
@@ -142,7 +142,7 @@ const handleAnimationComplete = () => {
                   <div 
                     className='absolute inset-0 bg-purple-200 m-4'
                     style={{
-                      filter: 'blur(clamp(20px, 10vw, 40px))'
+                      filter: 'blur(clamp(12px, 10vw, 10px))'
                     }}
                   />
                 
