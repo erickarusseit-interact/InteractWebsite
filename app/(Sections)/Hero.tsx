@@ -101,7 +101,7 @@ const handleAnimationComplete = () => {
     
 
       {/* Hero:Window.IL Main Container - Responsive  */}
-      <div className=' overflow-visibleflex flex-col justify-center items-center lg:items-start gap-3 w-full max-w-[320px] sm:max-w-[400px] lg:max-w-[472px] h-auto min-h-[280px] sm:min-h-[320px] lg:min-h-[348px] z-10 mix-blend-overlay'>
+      <div className=' overflow-visible flex flex-col justify-center items-center lg:items-start gap-3 w-full max-w-[320px] sm:max-w-[400px] lg:max-w-[472px] h-auto min-h-[280px] sm:min-h-[320px] lg:min-h-[348px] z-10 '>
         
         {/* Frame 92 - Main Window */}
         <div className='flex flex-row items-start gap-3 w-full h-auto min-h-[280px] sm:min-h-[320px] lg:min-h-[348px] overflow-visible'>
@@ -128,21 +128,21 @@ const handleAnimationComplete = () => {
                   <div 
                     className='absolute inset-0 opacity-70 bg-purple-300/90'
                     style={{
-                      filter: 'blur(clamp(20px, 5vw, 50px))'
+                      filter: 'blur(clamp(10px, 5vw, 20px))'
                     }}
                   />
                   {/* Purple glow */}
                   <div 
                     className='absolute inset-0 bg-purple-600 '
                     style={{
-                      filter: 'blur(clamp(35px, 5vw, 60px))'
+                      filter: 'blur(clamp(14px, 5vw, 24px))'
                     }}
                   />
                   {/* Light purple glow 1 */}
                   <div 
                     className='absolute inset-0 bg-purple-200 m-4'
                     style={{
-                      filter: 'blur(clamp(20px, 10vw, 30px))'
+                      filter: 'blur(clamp(12px, 10vw, 10px))'
                     }}
                   />
                 
