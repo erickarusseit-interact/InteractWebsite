@@ -128,21 +128,21 @@ const handleAnimationComplete = () => {
                   <div 
                     className='absolute inset-0 opacity-70 bg-purple-300/90'
                     style={{
-                      filter: 'blur(clamp(10px, 5vw, 20px))'
+                      filter: 'blur(clamp(20px, 5vw, 50px))'
                     }}
                   />
                   {/* Purple glow */}
                   <div 
                     className='absolute inset-0 bg-purple-600 '
                     style={{
-                      filter: 'blur(clamp(14px, 5vw, 24px))'
+                      filter: 'blur(clamp(35px, 5vw, 60px))'
                     }}
                   />
                   {/* Light purple glow 1 */}
                   <div 
                     className='absolute inset-0 bg-purple-200 m-4'
                     style={{
-                      filter: 'blur(clamp(12px, 10vw, 10px))'
+                      filter: 'blur(clamp(20px, 10vw, 30px))'
                     }}
                   />
                 
