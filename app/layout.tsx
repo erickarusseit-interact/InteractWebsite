@@ -19,17 +19,20 @@ const headline = Outfit({
 });
 
 
+// app/layout.tsx lines 22-33
 export const metadata = {
-  title: "Interact Web App",
-  description: "Wir wissen andere raten. Wir entwickeln Webapps und Websites mit perspektive und Wirkung. Von der Poistionoerung bis zum fertigen Produkt.",
-  icons: {
-    icon: [
-      { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
-      { url: '/favicon.svg', type: 'image/svg+xml' }
-    ],
-    shortcut: '/favicon.ico',
-    apple: '/favicon.svg',
-  },
+    title: "Interact Web App",
+    description: "Wir wissen andere raten. Wir entwickeln Webapps und Websites mit perspektive und Wirkung. Von der Poistionoerung bis zum fertigen Produkt.",
+    icons: {
+        icon: [
+            { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
+            { url: '/favicon.svg', type: 'image/svg+xml' },
+            { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+            { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' }
+        ],
+        shortcut: '/favicon.ico',
+        apple: '/apple-icon.png',
+    },
 };
 
 
