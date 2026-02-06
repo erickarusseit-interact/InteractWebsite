@@ -14,7 +14,7 @@ export default function LeistungenBento() {
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-10 gap-4 sm:gap-6 auto-rows-fr lg:h-[960px]'>
                 
                 {/* Card 1 - Positionierung und Marktforschung */}
-                <div className='bg-black text-neutral-100 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 flex flex-col justify-between relative overflow-hidden h-[480px] sm:h-[360px] md:h-[400px] lg:h-full col-span-1 md:col-span-2 lg:col-span-6'>
+                <div className='bg-black text-neutral-100 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 flex flex-col justify-between relative overflow-hidden h-[400px] sm:h-[360px] md:h-[400px] lg:h-full col-span-1 md:col-span-2 lg:col-span-6'>
                     <p className='text-neutral-400 text-sm sm:text-base mb-4 z-20'>
                         <span className='text-neutral-50 font-medium'>Positionierung und Marktforschung, </span>
                         Wir schaffen Klarheit darüber, was Ihr wirklich verkauft, wen und warum es überzeugt
@@ -31,7 +31,7 @@ export default function LeistungenBento() {
                 </div>
 
                 {/* Card 2 - UX & Produktdesign */}
-                <div className='bg-neutral-950 text-neutral-100 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 flex flex-col justify-between relative overflow-hidden h-[480px] sm:h-[360px] md:h-[400px] lg:h-full col-span-1 md:col-span-1 lg:col-span-4'>
+                <div className='bg-neutral-950 text-neutral-100 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 flex flex-col justify-between relative overflow-hidden h-[400px] sm:h-[360px] md:h-[400px] lg:h-full col-span-1 md:col-span-1 lg:col-span-4'>
                     <p className='text-neutral-400 text-sm sm:text-base mb-4 z-20'>
                         <span className='text-neutral-50 font-medium'>UX & Produktdesign, </span>
                         Wir übersetzen Erkenntnis in markante Strukturen, klare Abläufe und intuitive Interfaces.
@@ -48,7 +48,7 @@ export default function LeistungenBento() {
                 </div>
 
                 {/* Card 3 - Automatisierung & Skalierung */}
-                <div className='bg-neutral-950 text-neutral-100 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 flex flex-col justify-between relative overflow-hidden h-[480px] sm:h-[360px] md:h-[400px] lg:h-full col-span-1 md:col-span-1 lg:col-span-4'>
+                <div className='bg-neutral-950 text-neutral-100 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 flex flex-col justify-between relative overflow-hidden h-[400px] sm:h-[360px] md:h-[400px] lg:h-full col-span-1 md:col-span-1 lg:col-span-4'>
                     <p className='text-neutral-400 text-sm sm:text-base mb-4 z-20'>
                         <span className='text-neutral-50 font-medium'>Automatisierung & Skalierung, </span>
                         Wir automatisieren Prozesse und schaffen Strukturen, die Wachstum ermöglichen, statt es zu bremsen.
@@ -64,14 +64,14 @@ export default function LeistungenBento() {
                 </div>
 
                 {/* Card 4 - Entwicklung */}
-                <div className='bg-black text-neutral-100 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 flex flex-col justify-between relative overflow-hidden h-[480px] sm:h-[360px] md:h-[400px] lg:h-full col-span-1 md:col-span-2 lg:col-span-6'>
+                <div className='bg-black text-neutral-100 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 flex flex-col justify-between relative overflow-hidden h-[400px] sm:h-[360px] md:h-[400px] lg:h-full col-span-1 md:col-span-2 lg:col-span-6'>
                     <p className='text-neutral-400 text-sm sm:text-base mb-4 z-20'>
                         <span className='text-neutral-50 font-medium'>Entwicklung, </span>
                         Wir entwickeln saubere, skalierbare Systeme, die sich flexibel anpassen lassen. So bleibt euer Produkt stabil, während es wächst.
                     </p>
                     {/* Image placeholder - absolute so it doesn't affect layout */}
                     <div className='absolute inset-0 flex items-center justify-center pointer-events-none'>
-                        <img src="/images/Webdev.IL.png" alt="Webdev.IL" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-contain h-full scale-150" />
+                        <img src="/images/Webdev.IL.png" alt="Webdev.IL" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-contain h-full scale-155" />
                     </div>
                     <div className='flex flex-col sm:flex-row sm:flex-wrap gap-x-4 sm:gap-x-6 gap-y-1 sm:gap-y-2 text-xs sm:text-sm text-neutral-400 relative z-10'>
                         <p>• Web- & Web-App-Entwicklung</p>
