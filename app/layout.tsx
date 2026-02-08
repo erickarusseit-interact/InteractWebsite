@@ -59,6 +59,16 @@ export default function RootLayout({
                 { label: "FAQ", href: "/#faq", ariaLabel: "FAQ" }
               ]
             },
+              {
+                  label: "Web Entwicklung",
+                  bgColor: "oklch(70.7% 0.165 254.624)",
+                  textColor: "#Black",
+                  links: [
+                      { label: "Leistungen", href: "/#leistungen", ariaLabel: "Leistungen" },
+                      { label: "Arbeitsweise", href: "/#ablauf", ariaLabel: "Arbeitsweise" },
+                      { label: "Techstack", href: "/#techstack", ariaLabel: "Techstack" }
+                  ]
+              },
 
             {
               label: "UX Design", 
@@ -69,16 +79,7 @@ export default function RootLayout({
                 { label: "Arbeitsweise", href: "/#ablauf", ariaLabel: "FAQ" }
               ]
             },
-            {
-              label: "Web Entwicklung",
-              bgColor: "oklch(70.7% 0.165 254.624)", 
-              textColor: "#Black",
-              links: [
-                { label: "Leistungen", href: "/#leistungen", ariaLabel: "Leistungen" },
-                { label: "Arbeitsweise", href: "/#ablauf", ariaLabel: "Arbeitsweise" },
-                { label: "Techstack", href: "/#techstack", ariaLabel: "Techstack" }
-              ]
-            },
+
 
             /*
               label: "Infos",

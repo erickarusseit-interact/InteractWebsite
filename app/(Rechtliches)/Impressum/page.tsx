@@ -27,8 +27,8 @@ export default function Impressum() {
           <p><span className="font-semibold text-neutral-900">Registereintrag</span><br />
           Eintragung im Handelsregister<br />
           Registergericht:<br />
-          Registernummer:<br />
-          Umsatzsteuer:</p>
+          Registernummer: <br />
+          Umsatzsteuer: DE456999370</p>
 
           <p><span className="font-semibold text-neutral-900">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</span><br />
           Interact<br />
