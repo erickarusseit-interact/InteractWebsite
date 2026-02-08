@@ -77,7 +77,7 @@ const Footer = () => {
               
               <div>
                 <h5 className="text-neutral-900 mb-4">Socials</h5>
-                <a href="#" className="inline-flex items-center justify-center w-10 h-10 bg-neutral-600 hover:bg-neutral-900 rounded transition-colors ">
+                <a href="https://www.linkedin.com/in/eric-karusseit?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className="inline-flex items-center justify-center w-10 h-10 bg-neutral-600 hover:bg-neutral-900 rounded transition-colors ">
                   <div className=" text-white items-center justify-center"  >
                     <span className="text-white font-bold">in</span>
                   </div>
