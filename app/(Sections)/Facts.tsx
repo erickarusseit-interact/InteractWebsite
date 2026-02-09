@@ -35,7 +35,7 @@ export default function Facts() {
               </div>
               <h3 className="text-[20px] sm:text-[22px] lg:text-[24px] font-semibold text-white leading-[115%] tracking-[-0.03em] mt-2">Conversion Rate</h3>
               <p className="text-[13px] sm:text-[14px] text-white/80 leading-[125%] tracking-[-0.02em] mt-1">
-                durchdachte UX Design überzeugt Kunden langfristig
+                  erreichen wir durch psychologisch fundiertes UX-Design, das Ihre Besucher messbar zu Kunden macht.
               </p>
             </div>
 
@@ -54,7 +54,7 @@ export default function Facts() {
               </div>
               <h3 className="text-[20px] sm:text-[22px] lg:text-[24px] font-semibold text-white leading-[115%] tracking-[-0.03em] mt-2">Glaubwürdigkeit</h3>
               <p className="text-[13px] sm:text-[14px] text-white/80 leading-[125%] tracking-[-0.02em] mt-1">
-                Da User die Seriosität Ihres Unternehmens anhand vom Design bestimmen.
+                  sichern wir durch ein High-End-Design, das Ihre Expertise für Kunden in Millisekunden spürbar macht.
               </p>
             </div>
 
@@ -73,7 +73,7 @@ export default function Facts() {
               </div>
               <h3 className="text-[20px] sm:text-[22px] lg:text-[24px] font-semibold text-white leading-[115%] tracking-[-0.03em] mt-2">Umsatz</h3>
               <p className="text-[13px] sm:text-[14px] text-white/80 leading-[125%] tracking-[-0.02em] mt-1">
-                dank konsistenter Markenbildung und automatisierter Systeme
+                  generieren wir durch eine glasklare Positionierung, die Ihre Marke zur automatisierten Wachstumsmaschine macht.
               </p>
             </div>
           </div>
