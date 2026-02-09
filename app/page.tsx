@@ -10,7 +10,7 @@ import Footer from './(Sections)/Footer';
 import Preise from './(Sections)/Preise';
 import Herosection from './(Sections)/Hero';
 import HeroUsp from './(Sections)/Hero-usp';
-
+import Facts from './(Sections)/Facts';
 
 export default function Home() {
   
@@ -21,7 +21,7 @@ export default function Home() {
     <div id="services"><LeistungenBento /></div>
     <div id="ablauf"><Zeitplan /></div>
     <div id="techstack"><Techstack/></div>
-    
+    <div id="facts"><Facts /></div>
     <div id="faq"><Faq /></div>
     <Footer />
   </div>
