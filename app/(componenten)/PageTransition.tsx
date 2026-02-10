@@ -1,24 +1,47 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { ReactNode } from 'react';
+import { useRef, useEffect, ReactNode } from 'react';
+import gsap from 'gsap';
 
-interface PageTransitionProps {
-    children: ReactNode;
-}
+export default function Template({ children }: { children: ReactNode }) {
+    const containerRef = useRef<HTMLDivElement>(null);
+    const overlayRef = useRef<HTMLDivElement>(null);
 
-export default function PageTransition({ children }: PageTransitionProps) {
+    useEffect(() => {
+        const ctx = gsap.context(() => {
+            const tl = gsap.timeline();
+
+            // Swipe overlay animation
+            tl.fromTo(
+                overlayRef.current,
+                { scaleX: 1, transformOrigin: 'left' },
+                { scaleX: 0, transformOrigin: 'right', duration: 0.6, ease: 'power3.inOut' }
+            );
+
+            // Content reveal
+            tl.fromTo(
+                containerRef.current,
+                { opacity: 0, y: 30, scale: 0.98 },
+                { opacity: 1, y: 0, scale: 1, duration: 0.5, ease: 'power2.out' },
+                '-=0.3'
+            );
+        });
+
+        return () => ctx.revert();
+    }, []);
+
     return (
-        <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{
-                duration: 0.4,
-                ease: [0.25, 0.1, 0.25, 1], // Apple-style easing
-            }}
-        >
-            {children}
-        </motion.div>
+        <>
+            {/* Swipe overlay */}
+            <div
+                ref={overlayRef}
+                className="fixed inset-0 z-[9999]  pointer-events-none"
+                style={{ transformOrigin: 'right' }}
+            />
+            {/* Page content */}
+            <div ref={containerRef}>
+                {children}
+            </div>
+        </>
     );
 }

@@ -21,7 +21,7 @@ const headline = Outfit({
 
 // app/layout.tsx lines 22-33
 export const metadata = {
-    title: "Interact Web App",
+    title: "Interact, Andere raten, wir wissen ",
     description: "Wir wissen andere raten. Wir entwickeln Webapps und Websites mit perspektive und Wirkung. Von der Poistionoerung bis zum fertigen Produkt.",
     icons: {
         icon: [
