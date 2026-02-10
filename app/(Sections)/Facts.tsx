@@ -12,7 +12,7 @@ export default function Facts() {
           {/* Left Column - Headline and CTA */}
           <div className="flex-1 flex flex-col justify-between items-start min-h-[300px] lg:min-h-[504px]">
             <h2 className="text-[28px] sm:text-[36px] lg:text-[42px] font-semibold leading-[115%] tracking-[-0.03em] text-white max-w-[567px]">
-              Wir sind die, zu denen du kommst, wenn alles sitzen muss.
+                Andere imitieren, wir setzen den Benchmark.
             </h2>
             <ButtonCTA />
           </div>
@@ -31,7 +31,7 @@ export default function Facts() {
                   gradientFrom="#C4B4FF"
                   gradientTo="#7F22FE"
                 />
-                <span className="text-[40px] sm:text-[52px] lg:text-[64px] font-semibold leading-[115%] bg-gradient-to-b from-[#C4B4FF] to-[#7F22FE] bg-clip-text text-transparent">%</span>
+                <span className="text-[40px] sm:text-[52px] lg:text-[64px] font-semibold leading-[115%] bg-gradient-to-b from-[#C4B4FF] to-[#7F22FE] bg-clip-text text-transparent ">%</span>
               </div>
               <h3 className="text-[20px] sm:text-[22px] lg:text-[24px] font-semibold text-white leading-[115%] tracking-[-0.03em] mt-2">Conversion Rate</h3>
               <p className="text-[13px] sm:text-[14px] text-white/80 leading-[125%] tracking-[-0.02em] mt-1">

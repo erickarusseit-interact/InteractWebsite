@@ -512,9 +512,9 @@ export default function Kontaktformular() {
               className="rounded-b-xl  px-16 py-4 border border-white/10 backdrop-blur-lg bg-neutral-50/80 flex text-white gap-5 "
               style={{ backgroundColor: 'rgba(250, 250, 250, 0.05)' }}
           >
-              <div className="h-14 w-14 rounded-4xl overflow-hidden content-center border-2 border-solid border-neutral-500 "> <img src="/images/EricKarusseit.Foto.png" alt="Eric Karusseit" /></div>
+              <div className="h-max-14 w-max-14 rounded-4xl overflow-hidden content-center border-2 border-solid border-neutral-500 "> <img src="/images/EricKarusseit.Foto.png" alt="Eric Karusseit" /></div>
               <div className="flex flex-col">
-              <span>auch Gern per Mail:</span>
+              <span>auch gerne per E-Mail:</span>
               <a href="mailto:eric.karusseit@interact-connects.de" className="hover:underline text-neutral-300 hover:text-blue-600">eric.karusseit@interact-connects.de</a>
               </div>
           </div>
