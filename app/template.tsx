@@ -35,7 +35,7 @@ export default function Template({ children }: { children: ReactNode }) {
             {/* Swipe overlay */}
             <div
                 ref={overlayRef}
-                className="fixed inset-0 z-[9999] bg-violet-600 pointer-events-none"
+                className="fixed inset-0 z-[9999] bg-black pointer-events-none"
                 style={{ transformOrigin: 'right' }}
             />
             {/* Page content */}
