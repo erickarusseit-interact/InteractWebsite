@@ -6,6 +6,7 @@ import ButtonCTA from '../(componenten)/button';
 import AnimatedDropdown from '../(componenten)/AnimatedDropdown';
 import Faq from '../(Sections)/Faq';
 import Link from 'next/link';
+import FOOTER from '../(Sections)/Footer';
 
 import { supabase } from '../superbase.client';
 
@@ -250,8 +251,9 @@ export default function Kontaktformular() {
   }
 
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center px-4 py-32 relative overflow-hidden flex-col">
-    <div>
+      <div className="min-h-screen bg-gradient-to-b from-black to-neutral-50 flex items-center justify-center px-4 pt-42 relative overflow-hidden flex-col">
+
+      <div>
       <TerminalBackground scale={responsiveScale} />
       
       <div className="w-full max-w-md relative z-10">
@@ -521,6 +523,9 @@ export default function Kontaktformular() {
               </div>
           </div>
       </div>
+          <div className="z-20 bg-neutral-50 w-full h-full mt-32">
+        <FOOTER/>
+          </div>
     </div>
     
     

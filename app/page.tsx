@@ -14,7 +14,7 @@ import Facts from './(Sections)/Facts';
 
 export default function Home() {
   
-  return <div className="bg-black">
+  return <div className= "bg-gradient-to-b from-black to-neutral-50 min-h-screen">
     
     <div id="hero"><Herosection /></div>
     <div id="leistungen"><HeroUsp /></div>

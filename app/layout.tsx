@@ -55,7 +55,7 @@ export default function RootLayout({
               bgColor: "oklch(71.4% 0.203 305.504)",
               textColor: "black",
               links: [
-                { label: "Leistungen", href: "/#leistungen", ariaLabel: "Marktforschung Leistungen" },
+                { label: "Mehrwert", href: "/#facts", ariaLabel: "Marktforschung Leistungen" },
                 { label: "FAQ", href: "/#faq", ariaLabel: "FAQ" }
               ]
             },
