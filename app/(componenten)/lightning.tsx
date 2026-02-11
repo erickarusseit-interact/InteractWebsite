@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect, useRef, useCallback, CSSProperties, ReactNode } from 'react';
-
+import { useLayoutEffect } from 'react';
 function hexToRgba(hex: string, alpha: number = 1): string {
   if (!hex) return `rgba(0,0,0,${alpha})`;
   let h = hex.replace('#', '');
@@ -173,7 +173,7 @@ const ElectricBorder: React.FC<ElectricBorderProps> = ({
     [getCornerPoint]
   );
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const canvas = canvasRef.current;
     const container = containerRef.current;
     if (!canvas || !container) return;

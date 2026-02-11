@@ -73,12 +73,12 @@ export default function Hero() {
 
 
               
-              {/* Inner Window with ElectricBorder - Responsive */}
+              {/* Inner Window with ElectricBorder and Glow effect - Responsive */}
               <div className='relative w-full aspect-[2/1] min-h-[100px] sm:min-h-[140px] md:min-h-[160px] lg:min-h-[180px] overflow-visible'>
             
                 {/* Layer 1: Purple blur glow (z-index 1) */}
                 <div 
-                  className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[calc(100%+25px)] h-[calc(100%+20px)] bg-purple-500/50 border border-white rounded-[14px] z-[1]'
+                  className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[calc(100%+25px)] h-[calc(100%+20px)] bg-purple-500/50 border  rounded-[14px] z-[1]'
                   style={{
                     filter: 'blur(80px)',
                     boxShadow: '0px 0px 4px #FFFFFF'
@@ -87,7 +87,7 @@ export default function Hero() {
                 
                 {/* Layer 2: White blur (z-index 2) */}
                 <div 
-                  className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-purple-300 border border-white rounded-[14px] z-[2]'
+                  className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-purple-300 border  rounded-[14px] z-[2]'
                   style={{
                     filter: 'blur(20px)',
                     boxShadow: '0px 0px 4px #FFFFFF'
@@ -96,14 +96,14 @@ export default function Hero() {
                 
                 {/* Layer 3: Light purple blur (z-index 3) */}
                 <div
-                  className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[92%] h-[85%] bg-purple-50/100 border border-white rounded-[24px] z-[3]'
+                  className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[92%] h-[85%] bg-purple-50/100 border  rounded-[24px] z-[3]'
                   style={{
                     filter: 'blur(10px)'
                   }}
                 />
 
                   <div
-                      className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[58%] bg-purple-200/80 border border-white rounded-[14px] z-[3]'
+                      className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[58%] bg-purple-200/80 border rounded-[14px] z-[3]'
                       style={{
                           filter: 'blur(15px)'
                       }}
