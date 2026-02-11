@@ -97,7 +97,8 @@ export default function Hero() {
                       style={{
                           borderRadius: 20,
                           boxShadow: '0px 0px 4px #FFFFFF, inset 0px 0px 6px #FFFFFF',
-                          width: '98%'
+                          width: 'calc(100% - 10px)',
+                          margin: 'auto'
                       }}
                   >
                   </ElectricBorder>
