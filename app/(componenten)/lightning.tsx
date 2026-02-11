@@ -188,7 +188,7 @@ const ElectricBorder: React.FC<ElectricBorderProps> = ({
     const frequency = 10;
     const baseFlatness = 0;
     const displacement = 60;
-    const borderOffset = Math.min(60, rect.width * 0.1); // Scale with container0;
+    const borderOffset =100;
 
     const updateSize = () => {
       const rect = container.getBoundingClientRect();
