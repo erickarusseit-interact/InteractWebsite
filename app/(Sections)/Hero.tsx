@@ -3,9 +3,9 @@ import ElectricBorder from '../(componenten)/lightning';
 
 export default function Hero() {
     return <section className=' h-fit mx-auto max-w-[1440px] bg-black text-neutral-100 sm:px-8 pt-32 pb-30 lg:px-20 flex flex-col md:flex-row md:pt-32 md:pb-24 lg:pt-48 lg:pb-32 xl:flex-row items-center justify-between w-full gap-24 2xl:gap-0 overflow-visible'>
-    <div className='flex flex-col gap-4 items-center md:items-start w-full md:w-1/2 text-center md:text-left overflow-visible'>
+    <div className='flex flex-col gap-4 items-center md:items-start w-full md:w-1/2 text-center md:text-left overflow-visible  '>
         <div className='flex flex-col gap-2'>
-        <h1 className='text-neutral-100 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl max-w-[85%]'> Andere raten, Wir wissen</h1>
+        <h1 className='text-neutral-100 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl w-fit '> Andere raten, Wir wissen</h1>
         <p className=" text-neutral-300 max-w-none lg:max-w-[85%] ">
             Wir entwickeln Webapps und Websites mit Wirkung, 
             basierend auf echter Marktforschung und messerscharfer Positionierung. 
@@ -95,7 +95,7 @@ export default function Hero() {
                       speed={1}
                       chaos={0.02}
                       style={{
-                          borderRadius: 24,
+                          borderRadius: 28,
                           boxShadow: '0px 0px 4px #FFFFFF, inset 0px 0px 6px #FFFFFF'
                       }}
                   >
