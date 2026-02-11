@@ -96,9 +96,7 @@ export default function Hero() {
                       chaos={0.02}
                       style={{
                           borderRadius: 20,
-                          boxShadow: '0px 0px 4px #FFFFFF, inset 0px 0px 6px #FFFFFF',
-                          width: 'calc(100% - 10px)',
-                          margin: 'auto'
+                          boxShadow: '0px 0px 4px #FFFFFF, inset 0px 0px 6px #FFFFFF'
                       }}
                   >
                   </ElectricBorder>
