@@ -28,7 +28,7 @@ export default function Hero() {
             </div>
 
             {/* Main Content Area - Responsive */}
-            <div className='relative flex flex-col items-center p-3 sm:p-4 md:p-5 lg:p-6 w-full flex-1 overflow-visible'>
+            <div className='relative flex flex-col items-center p-3 sm:p-4 md:p-5 lg:p-6 w-full flex-1 overflow-visible box-border'>
 
                 {/* Visuals Container */}
                 <div className='flex flex-col justify-center items-center gap-3 w-full max-w-full overflow-visible'>
@@ -98,6 +98,7 @@ export default function Hero() {
                           borderRadius: 20,
                           boxShadow: '0px 0px 4px #FFFFFF, inset 0px 0px 6px #FFFFFF'
                       }}
+
                   >
                   </ElectricBorder>
               </div>
