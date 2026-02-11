@@ -95,7 +95,7 @@ export default function Hero() {
                       speed={1}
                       chaos={0.02}
                       style={{
-                          borderRadius: 20,
+                          borderRadius: 24,
                           boxShadow: '0px 0px 4px #FFFFFF, inset 0px 0px 6px #FFFFFF'
                       }}
                   >
