@@ -27,7 +27,7 @@ export default function Hero() {
 
 
         {/* Hero:Window.IL */}
-        <div className='flex flex-col justify-center items-center w-full md:w-1/2 gap-4'>
+        <div className='flex flex-col justify-center items-center w-full px-4 sm:px-6 md:px-0 md:w-1/2 gap-3 sm:gap-4'>
 
             {/* Tag Pills Row 2 - Marktforschung & Development
             <div className='flex justify-between items-start gap-3 w-fit h-9'>
@@ -54,17 +54,17 @@ export default function Hero() {
             </div>*/}
           
           {/* Main Window Container */}
-          <div className=' flex flex-col items-start gap-0 w-full border border-[#292524] rounded-md overflow-visible'>
+          <div className='flex flex-col items-start w-full max-w-[500px] md:max-w-none border border-[#292524] rounded-md overflow-visible'>
             
             {/* Window Header with Dots - Responsive */}
-            <div className='flex items-center px-3 py-[10px] gap-1 w-full h-[30px] border-b border-[rgba(28,25,23,0.3)]'>
+            <div className='flex items-center px-2 sm:px-3 py-2 gap-1 w-full h-6 sm:h-[30px] border-b border-[rgba(28,25,23,0.3)]'>
               <div className='w-2 h-2 sm:w-[10px] sm:h-[10px] bg-[#FF5F57] opacity-20 border border-[#E1413A] rounded-full'></div>
               <div className='w-2 h-2 sm:w-[10px] sm:h-[10px] bg-[#FEBC2E] opacity-20 border border-[#DF9C0C] rounded-full'></div>
               <div className='w-2 h-2 sm:w-[10px] sm:h-[10px] bg-[#28C840] opacity-20 border border-[#0CA923] rounded-full'></div>
             </div>
 
             {/* Main Content Area - Responsive */}
-            <div className='relative flex flex-col items-center px-4 sm:px-6 lg:px-[30px] py-4 sm:py-6 lg:py-6 gap-4 sm:gap-6 lg:gap-[30px] w-full flex-1 isolate overflow-visible'>
+            <div className='relative flex flex-col items-center p-3 sm:p-4 md:p-5 lg:p-6 w-full flex-1 isolate overflow-visible'>
 
                 {/* Visuals Container */}
                 <div className='flex flex-col justify-center items-center gap-3 w-full max-w-full overflow-visible'>
@@ -74,7 +74,7 @@ export default function Hero() {
 
               
               {/* Inner Window with ElectricBorder - Responsive */}
-              <div className='relative w-full h-60 max-h-[140px] sm:max-h-[170px] lg:max-h-[200px] overflow-visible'>
+              <div className='relative w-full aspect-[2/1] min-h-[100px] sm:min-h-[140px] md:min-h-[160px] lg:min-h-[180px] overflow-visible'>
             
                 {/* Layer 1: Purple blur glow (z-index 1) */}
                 <div 
@@ -130,7 +130,7 @@ export default function Hero() {
           </div>
 
               {/* Bottom Tabs - Responsive */}
-              <div className='flex items-start px-3 sm:px-6 lg:px-[30px] gap-2 sm:gap-3 lg:gap-3 w-full h-[32px] sm:h-[40px] lg:h-[50px]'>
+              <div className='flex items-start px-2 sm:px-4 md:px-6 gap-2 sm:gap-3 w-full h-6 sm:h-8 md:h-10 lg:h-12'>
                   <div className='w-full h-full bg-white/10 border border-[#292524] rounded-t-[4px]'></div>
                   <div className='w-full h-full bg-white/10 border border-[#292524] rounded-t-[4px]'></div>
               </div>
