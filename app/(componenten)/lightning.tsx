@@ -218,9 +218,9 @@ const ElectricBorder: React.FC<ElectricBorderProps> = ({
       ctx.setTransform(1, 0, 0, 1, 0, 0);
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       ctx.scale(dpr, dpr);
-
+//Electric Border style width
       ctx.strokeStyle = color;
-      ctx.lineWidth = 1;
+      ctx.lineWidth = 1.5;
       ctx.lineCap = 'round';
       ctx.lineJoin = 'round';
 

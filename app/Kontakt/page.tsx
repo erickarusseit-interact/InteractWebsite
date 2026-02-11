@@ -251,7 +251,7 @@ export default function Kontaktformular() {
   }
 
   return (
-      <div className="min-h-screen bg-gradient-to-b from-black to-neutral-50 flex items-center justify-center px-4 pt-42 relative overflow-hidden flex-col">
+      <div className="min-h-screen bg-gradient-to-b from-black to-neutral-50 flex items-center justify-center  pt-42 relative overflow-hidden flex-col">
 
       <div>
       <TerminalBackground scale={responsiveScale} />
