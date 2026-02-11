@@ -188,27 +188,40 @@ const ElectricBorder: React.FC<ElectricBorderProps> = ({
     const frequency = 10;
     const baseFlatness = 0;
     const displacement = 60;
-    const borderOffset =10;
+    const borderOffset = 10;
+
+    let width = 0;
+    let height = 0;
 
     const updateSize = () => {
       const rect = container.getBoundingClientRect();
-      const width = rect.width + borderOffset * 2;
-      const height = rect.height + borderOffset * 2;
+      width = rect.width + borderOffset * 2;
+      height = rect.height + borderOffset * 2;
 
       const dpr = Math.min(window.devicePixelRatio || 1, 2);
       canvas.width = width * dpr;
       canvas.height = height * dpr;
       canvas.style.width = `${width}px`;
       canvas.style.height = `${height}px`;
+      ctx.setTransform(1, 0, 0, 1, 0, 0);
       ctx.scale(dpr, dpr);
 
       return { width, height };
     };
 
-    let { width, height } = updateSize();
+    // Delay initial size measurement to ensure container is fully laid out
+    requestAnimationFrame(() => {
+      updateSize();
+    });
 
     const drawElectricBorder = (currentTime: number) => {
       if (!canvas || !ctx) return;
+      
+      // Skip drawing if size not yet measured
+      if (width === 0 || height === 0) {
+        animationRef.current = requestAnimationFrame(drawElectricBorder);
+        return;
+      }
 
       const deltaTime = (currentTime - lastFrameTimeRef.current) / 1000;
       timeRef.current += deltaTime * speed;
