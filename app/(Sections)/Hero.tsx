@@ -99,7 +99,7 @@ export default function Hero() {
                       left: '1%'
                   }}>
                   <ElectricBorder
-                      className='relative w-full h-full z-[20]'
+                      className='relative w-full h-full z-[00]'
                       color="#FFFFFF"
                       speed={1}
                       chaos={0.02}
