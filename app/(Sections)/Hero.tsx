@@ -37,7 +37,7 @@ export default function Hero() {
 
                   {/* Layer 1: Purple blur glow */}
                   <div
-                      className='absolute left-1/2 top-1/2 w-[calc(100%+25px)] h-[calc(100%+20px)] bg-purple-500/50 rounded-[14px] z-[1]'
+                      className='absolute left-1/2 top-1/2 w-[calc(100%+25px)] h-[calc(100%+20px)] bg-purple-500/50 rounded-[24px] z-[1]'
                       style={{
                           filter: 'blur(80px)',
                           boxShadow: '0px 0px 4px #FFFFFF',
@@ -51,7 +51,7 @@ export default function Hero() {
 
                   {/* Layer 2: White blur */}
                   <div
-                      className='absolute left-1/2 top-1/2 w-full h-full bg-purple-300 rounded-[14px] z-[2]'
+                      className='absolute left-1/2 top-1/2 w-full h-full bg-purple-300 rounded-[24px] z-[2]'
                       style={{
                           filter: 'blur(20px)',
                           boxShadow: '0px 0px 4px #FFFFFF',
@@ -77,7 +77,7 @@ export default function Hero() {
                 />
 
                   <div
-                      className='absolute left-1/2 top-1/2 w-[80%] h-[58%] bg-purple-200/80  rounded-[14px] z-[3]'
+                      className='absolute left-1/2 top-1/2 w-[80%] h-[58%] bg-purple-200/80  rounded-[24px] z-[3]'
                       style={{
                           filter: 'blur(15px)',
                           // FIX FÜR SAFARI:
@@ -92,14 +92,15 @@ export default function Hero() {
                   <div style={{
                       borderRadius: 24,
                       boxShadow:  '0px 0px 4px #FFFFFF, inset 0px 0px 6px #FFFFFF',
-                      width: '98%',
-                      height: '98%',
+                      inset: '0%',
+                      width: '100%',
+                      height: '100%',
 
                       top: '1%',
                       left: '1%'
                   }}>
                   <ElectricBorder
-                      className='relative w-full h-full z-[00]'
+                      className='relative w-full h-full z-[00] inset-0'
                       color="#FFFFFF"
                       speed={1}
                       chaos={0.02}

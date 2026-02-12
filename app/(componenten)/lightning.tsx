@@ -191,9 +191,9 @@ const ElectricBorder: React.FC<ElectricBorderProps> = ({
         const borderOffset = 60;    //60
 
         const updateSize = () => {
-            const rect = container.getBoundingClientRect();
-            const width = rect.width + borderOffset * 2;
-            const height = rect.height + borderOffset * 2;
+            // Nutze offsetWidth/Height für stabilere Ganzzahl-Werte auf Mobile
+            const width = container.offsetWidth + borderOffset * 2;
+            const height = container.offsetHeight + borderOffset * 2;
 
             const dpr = Math.min(window.devicePixelRatio || 1, 2);
             canvas.width = width * dpr;
@@ -205,7 +205,8 @@ const ElectricBorder: React.FC<ElectricBorderProps> = ({
             return { width, height };
         };
 
-        let { width, height } = updateSize();
+        // WARTE AUF DEN NÄCHSTEN RENDER-ZYKLUS
+        let { width, height } = { width: 0, height: 0 };
 
         const drawElectricBorder = (currentTime: number) => {
             if (!canvas || !ctx) return;
@@ -288,7 +289,13 @@ const ElectricBorder: React.FC<ElectricBorderProps> = ({
         });
         resizeObserver.observe(container);
 
-        animationRef.current = requestAnimationFrame(drawElectricBorder);
+        // Ein kurzes rAF stellt sicher, dass das Layout stabil ist
+        requestAnimationFrame(() => {
+            const size = updateSize();
+            width = size.width;
+            height = size.height;
+            animationRef.current = requestAnimationFrame(drawElectricBorder);
+        });
 
         return () => {
             if (animationRef.current) {
