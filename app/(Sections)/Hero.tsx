@@ -92,8 +92,11 @@ export default function Hero() {
                   <div style={{
                       borderRadius: 20,
                       boxShadow:  '0px 0px 4px #FFFFFF, inset 0px 0px 6px #FFFFFF',
-                      width: '100%',
-                      height: '100%'
+                      width: '98%',
+                      height: '98%',
+                      position: 'absolute',
+                      top: '1%',
+                      left: '1%'
                   }}>
                   <ElectricBorder
                       className='relative w-full h-full z-[20]'
