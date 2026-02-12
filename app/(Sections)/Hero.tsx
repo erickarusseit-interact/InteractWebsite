@@ -90,11 +90,11 @@ export default function Hero() {
 
                   {/* Main visible element (z-index 0) */}
                   <div style={{
-                      borderRadius: 20,
+                      borderRadius: 24,
                       boxShadow:  '0px 0px 4px #FFFFFF, inset 0px 0px 6px #FFFFFF',
                       width: '98%',
                       height: '98%',
-                      position: 'absolute',
+
                       top: '1%',
                       left: '1%'
                   }}>
