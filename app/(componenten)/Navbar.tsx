@@ -156,6 +156,18 @@ const CardNav: React.FC<CardNavProps> = ({
     if (el) cardsRef.current[i] = el;
   };
 
+  const handleLinkClick = () => {
+    setTimeout(() => {
+      if (isExpanded) {
+        const tl = tlRef.current;
+        if (!tl) return;
+        setIsHamburgerOpen(false);
+        tl.eventCallback('onReverseComplete', () => setIsExpanded(false));
+        tl.reverse();
+      }
+    }, 900);
+  };
+
   return (
     <div
       className={` card-nav-container fixed left-1/2 -translate-x-1/2 w-[90%] max-w-[1040px] z-[99] top-[1.2em] md:top-[2em] ${className}`}
@@ -224,6 +236,7 @@ const CardNav: React.FC<CardNavProps> = ({
                     className="nav-card-link inline-flex items-center gap-[6px] no-underline cursor-pointer transition-all duration-300 hover:text-white text-[15px] md:text-[16px] text-neutral-300"
                     href={lnk.href}
                     aria-label={lnk.ariaLabel}
+                    onClick={handleLinkClick}
                   >
                     <span className="nav-card-link-icon shrink-0">→</span>
                     {lnk.label}
