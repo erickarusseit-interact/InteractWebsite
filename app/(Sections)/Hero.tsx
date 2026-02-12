@@ -89,18 +89,21 @@ export default function Hero() {
                   />
 
                   {/* Main visible element (z-index 0) */}
+                  <div style={{
+                      borderRadius: 20,
+                      boxShadow:  '0px 0px 4px #FFFFFF, inset 0px 0px 6px #FFFFFF',
+                      width: '100%',
+                      height: '100%'
+                  }}>
                   <ElectricBorder
                       className='relative w-full h-full z-[20]'
                       color="#FFFFFF"
                       speed={1}
                       chaos={0.02}
-                      style={{
-                          borderRadius: 20,
-                          boxShadow: '0px 0px 4px #FFFFFF, inset 0px 0px 6px #FFFFFF'
-                      }}
 
                   >
                   </ElectricBorder>
+                  </div>
               </div>
 
             </div>
