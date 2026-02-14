@@ -8,7 +8,7 @@ import Faq from '../(Sections)/Faq';
 import Link from 'next/link';
 import FOOTER from '../(Sections)/Footer';
 
-import { supabase } from '../superbase.client';
+// Supabase wird jetzt server-seitig über /api/contact aufgerufen
 
 interface FormData {
   name: string;
@@ -187,28 +187,33 @@ export default function Kontaktformular() {
     setIsSubmitting(true);
     
     try {
-      // Schritt 5: Sende die Daten an Supabase
-      // supabase.from('customer') = wählt die Tabelle 'customer'
-      // .insert({...}) = fügt eine neue Zeile mit diesen Daten ein
-      const { error } = await supabase
-        .from('customer')
-        .insert({
-          // Diese Felder müssen in deiner Supabase-Tabelle existieren!
+      // Schritt 5: Sende die Daten an die server-seitige API Route
+      // /api/contact validiert, prüft Rate Limit und speichert in Supabase
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
           name: formData.name,
           email: formData.email,
           company: formData.company,
           phone: formData.phone,
-          project_type: formData.projectType,
-          budget_min: budgetRange.min,
-          budget_max: budgetRange.max,
+          projectType: formData.projectType,
+          budgetMin: budgetRange.min,
+          budgetMax: budgetRange.max,
           timeline: formData.timeline,
           description: formData.description,
-        });
-      
-      // Schritt 6: Prüfe ob Supabase einen Fehler zurückgegeben hat
-      if (error) {
-        console.error('Supabase Fehler:', error);
-        setErrors(['submit']); // Zeigt allgemeine Fehlermeldung
+        }),
+      });
+
+      // Schritt 6: Prüfe ob die API einen Fehler zurückgegeben hat
+      if (!res.ok) {
+        const data = await res.json();
+        console.error('API Fehler:', data.error);
+        if (res.status === 429) {
+          setErrors(['rateLimit']);
+        } else {
+          setErrors(['submit']);
+        }
         return;
       }
       
@@ -485,7 +490,7 @@ export default function Kontaktformular() {
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <span>Bitte füllen Sie alle Pflichtfelder aus</span>
+                <span>{errors.includes('rateLimit') ? 'Zu viele Anfragen. Bitte versuchen Sie es in einer Minute erneut.' : 'Bitte füllen Sie alle Pflichtfelder aus'}</span>
               </div>
             )}
 
