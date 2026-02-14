@@ -208,7 +208,6 @@ const CardNav: React.FC<CardNavProps> = ({
             <ButtonCTA text="Projekt starten"/>
           </div>
 
-          
         </div>
 
         <div

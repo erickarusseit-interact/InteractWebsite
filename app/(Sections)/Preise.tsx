@@ -2,16 +2,15 @@
 import React, { useEffect, useRef } from 'react';
 import CardSwap, { Card } from '../(componenten)/CardSwap'
 
+
+
+
  type Stage = {
    title: string;
    description: string;
  };
  
 
-
-
-
-  
  const STAGES: Stage[] = [
    {
      title: 'Plan',
@@ -77,7 +76,6 @@ export default function Preise() {
 
         
       </div>
-      
     </section>
   );
 
