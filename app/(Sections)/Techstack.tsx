@@ -195,6 +195,7 @@ export default function Techstack() {
                   className="object-contain  object-center"
               />
           </IconBadge>
+
         </div>
       ),
     },
@@ -214,7 +215,7 @@ export default function Techstack() {
               }`}
             >
               <div className='flex items-center gap-6 min-w-0 sm:w-[280px] lg:w-[440px]'>
-                {row.icons}
+                <div className='min-w-[88px]'>{row.icons}</div>
                 <div className='font-medium text-neutral-900'><h5>{row.label} </h5></div>
               </div>
 
